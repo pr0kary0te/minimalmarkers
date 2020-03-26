@@ -258,7 +258,8 @@ if($iteration == 1)
   foreach $score (sort {$b<=>$a} keys %orderbyscore)
      {
      $ref = $orderbyscore{$score}; @ary = @$ref; 
-     foreach $pattern(@ary){$id = $pattern2id{$pattern}; $map = $id2map{$id}; print ORDERED "$id\t$map\t$score\t$pattern\n";}
+     foreach $pattern(@ary){$id = $pattern2id{$pattern}; $map = $id2locus{$id}; 
+     print ORDERED "$id\t$map\t$score\t$pattern\n";}
      }
   }
 
