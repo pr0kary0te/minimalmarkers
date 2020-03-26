@@ -20,7 +20,7 @@ if(-e $mapfile)
   while(<MAP>)
     {
     ($id,$chr,$position,@other) = split(/[\t\,]/, $_);
-    $locus = "Chr_$chr $pos";
+    $locus = "Chr_$chr $position";
     $id2locus{$id} = $locus;
     }
   }
