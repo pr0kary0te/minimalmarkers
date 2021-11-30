@@ -21,4 +21,6 @@ A more detailed explanation of the approach can be found in our paper: https://d
 Also supplied is a script for checking the proportion of varieties in the original genotyping file that are resulved by the selected minimal marker set. 
   To run this, give the minimal marker results file as the first command argument and the original genotype file as the second, e.g.
   ./check_results.pl AppleGenotypes_minimal_markers.txt AppleGenotypes.csv
+For the example data, you should find that 23 SNPs will discriminate all varieties except "Willy" versus "Connie" - which are not distinguishable.
+
 
