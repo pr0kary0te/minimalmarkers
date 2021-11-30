@@ -6,7 +6,7 @@ Sample SeqSNP data for Cider apples is included as a test dataset.  To run this,
 
 ./select_minimal_markers.pl AppleGenotypes.csv 
 
-The Apple example data supplied has 1286 markers and 260 varieties and runs in a few minutes but larget datasets may take much longer!
+The Apple example data supplied has 1286 markers and 260 varieties and runs in a few minutes but larger datasets may take much longer!
 The example data file is comma separated and uses 0 of AA, 1 for BB and 2 for BB.  It will also accept tab separated data and A, AB, B formatted genotype calls as input.
 
 
