@@ -7,6 +7,7 @@ Sample SeqSNP data for Cider apples is included as a test dataset.  To run this,
 
 The Apple example data supplied has 1286 markers and 260 varieties and runs in a few minutes but larget datasets may take much longer!
 
+A more detailed explanation of the approach can be found in our paper: https://doi.org/10.1371/journal.pone.0242940
 
 Also supplied is a script for checking the proportion of varieties in the original genotyping file that are resulved by the selected minimal marker set. 
   To run this, give the minimal marker results file as the first command argument and the original genotype file as the second, e.g.
