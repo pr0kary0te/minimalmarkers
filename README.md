@@ -6,6 +6,10 @@ Sample SeqSNP data for Cider apples is included as a test dataset.  To run this,
 
 ./select_minimal_markers.pl AppleGenotypes.csv 
 
+The script will first pick the marker which discriminates the maximum number of varieties (iteration 1).
+For iteration 2, it will find the marker which discriminates the maximum varieties which were NOT discriminated by the marker in iteration 1.
+This process continues until either: 1) There are no markers left, 2) adding more markers doesn't add additional varietal discrimination or 3) all varieties are discriminated.  Output is written to tab delimited text files which can be viewed in Excel or similar.
+
 The Apple example data supplied has 1286 markers and 260 varieties and runs in a few minutes but larger datasets may take much longer!
 The example data file is comma separated and uses 0 of AA, 1 for BB and 2 for BB.  It will also accept tab separated data and A, AB, B formatted genotype calls as input.
 
