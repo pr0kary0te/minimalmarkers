@@ -23,4 +23,9 @@ Also supplied is a script for checking the proportion of varieties in the origin
   ./check_results.pl AppleGenotypes_minimal_markers.txt AppleGenotypes.csv
 For the example data, you should find that 23 SNPs will discriminate all varieties except "Willy" versus "Connie" - which are not distinguishable.
 
+If you are starting with genotypes in the commonly used VCF format, you may be able to convert these to 0, 1, 2 format using
+./convert_vcf_to_genotypes.pl infile.vcf
+
+This may not work for all VCFs so please check your output if you use this script and report any bugs.
+
 
